@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <com.personal.android.wallpaper.utils.SquareImage
+        android:id="@+id/collections_item_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorTransparent"
+        android:padding="12dp"
+        >
+        <TextView
+            android:id="@+id/collection_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:text="Beautiful Mountain"
+            android:textColor="@color/colorWhite"
+            android:layout_centerInParent="true"
+            android:textAlignment="center"
+            />
+        <TextView
+            android:id="@+id/collection_item_total_photos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="12 Photos"
+            android:textColor="@color/colorWhite"
+            />
+
+    </RelativeLayout>
+    
+</FrameLayout>
